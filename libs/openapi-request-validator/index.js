@@ -36,7 +36,12 @@ module.exports = {
         return async (req, res, next) => {
           const validate = await validatorPromise;
 
-          await parseReqJson(req, res);
+          try {
+            await parseReqJson(req, res);
+          } catch {
+            res.sendStatus(400);
+            return;
+          }
 
           try {
             await validate(req, res);
@@ -59,12 +64,7 @@ async function parseReqJson(req, res) {
   req.egContext.requestStream = new PassThrough();
   req.pipe(req.egContext.requestStream);
 
-  try {
-    await promisify(json())(req, res);
-  } catch {
-    res.sendStatus(400);
-    return;
-  }
+  await promisify(json())(req, res);
 }
 
 async function getOpenapiValidator(openapiSpecPath) {
