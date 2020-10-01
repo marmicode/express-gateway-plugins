@@ -1,0 +1,13 @@
+{
+  "name": "@marmicode/eg-logger",
+  "version": "0.1.0",
+  "repository": "https://github.com/marmicode/express-gateway-plugins",
+  "author": "Younes Jaaidi <yjaaidi@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "express-winston": "^4.0.5",
+    "winston": "^3.3.3",
+    "winston-tcp": "^3.0.0"
+  }
+}

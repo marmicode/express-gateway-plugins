@@ -1,0 +1,13 @@
+{
+  "name": "@marmicode/eg-openapi-request-validator",
+  "version": "0.1.0",
+  "repository": "https://github.com/marmicode/express-gateway-plugins",
+  "author": "Younes Jaaidi <yjaaidi@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@marmicode/openapi-utils": "^0.1.0",
+    "express": "^4.17.1",
+    "express-openapi-validator": "^4.0.4"
+  }
+}

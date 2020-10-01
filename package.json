@@ -1,0 +1,12 @@
+{
+  "name": "express-gateway-plugins",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/marmicode/express-gateway-plugins",
+  "author": "Younes Jaaidi <yjaaidi@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "libs/*"
+  ]
+}
